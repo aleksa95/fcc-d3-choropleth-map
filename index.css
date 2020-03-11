@@ -1,18 +1,64 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    position: relative;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+html, body {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
-    font-family: Roboto, SansSerif;
     display: flex;
     justify-content: center;
+    font-family: Roboto, SansSerif;
+    padding: 20px;
+}
+
+#main {
+    width: 1000px;
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counties {
+    fill: none;
+}
+
+.states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+div.tooltip {
+    position: absolute;
+    padding: 10px;
+    font: 12px Arial;
+    background: rgba(241, 243, 244, 0.9);
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+#title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#description {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#source {
+    align-self: center;
+    margin-top: 50px;
+}
+
+a {
+    transition: all 420ms cubic-bezier(.165,.84,.44,1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2684FF;
 }
